@@ -8,15 +8,15 @@ print(float(h))
 time = int(input("Enter your time"))
 hrs = int(time / 3600)
 if hrs < 10:
-    hrs = str(10 + hrs)
+    hrs = str(10) + str(hrs)
 
 minut = int(time / 60)
 if minut < 10:
-    minut = str(10 + minut)
+    minut = str(10) + str(minut)
 
 sec = time % 60
 if sec < 10:
-    sec = str(10 + sec)
+    sec = str(10) + str(sec)
 time_cor = str(hrs) + ":" + str(minut) + ":" + str(sec)
 print(time_cor)
 
