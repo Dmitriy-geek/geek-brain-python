@@ -34,7 +34,7 @@ print(f'Числа от 20 до 240 кратные 20 или 21 - {[el for el in
 
 # четвертая задача
 my_list = [2, 5, 2, 7, 23, 23, 44, 44, 3, 2, 10, 7, 4, 11]
-my_new_list = [el for el in my_list if my_list.count(el) == 2]
+my_new_list = [el for el in my_list if my_list.count(el) < 2]
 print(my_new_list)
 
 
