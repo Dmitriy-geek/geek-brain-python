@@ -86,15 +86,12 @@ print(div.divide_by_null())
 
 
 class Error:
-    def __init__(self, *args):
+    def __init__(self):
         self.my_list = []
 
     def my_input(self):
 
-        # self.my_list = [int(i) for i in input('Введите значения через пробел ').split()]
-        # val = int(input('Введите значения и нажимайте Enter - '))
-        # self.my_list.append(val)
-        while True:
+       while True:
             try:
                 val = int(input('Введите значения и нажимайте Enter - '))
                 self.my_list.append(val)
@@ -110,7 +107,7 @@ class Error:
                 else:
                     return f'Вы вышли'
 
-try_except = Error(1)
+try_except = Error()
 print(try_except.my_input())
 
 
